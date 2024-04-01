@@ -112,12 +112,13 @@
             // 
             // button8
             // 
-            button8.Location = new Point(280, 148);
+            button8.Location = new Point(280, 142);
             button8.Name = "button8";
-            button8.Size = new Size(124, 42);
+            button8.Size = new Size(124, 55);
             button8.TabIndex = 7;
-            button8.Text = "button8";
+            button8.Text = "Proveedor que Suministro Mas Productos";
             button8.UseVisualStyleBackColor = true;
+            button8.Click += button8_Click;
             // 
             // button9
             // 
@@ -125,8 +126,9 @@
             button9.Name = "button9";
             button9.Size = new Size(124, 42);
             button9.TabIndex = 8;
-            button9.Text = "button9";
+            button9.Text = "Productos Vendidos por TipoProd";
             button9.UseVisualStyleBackColor = true;
+            button9.Click += button9_Click;
             // 
             // button10
             // 

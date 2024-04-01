@@ -12,7 +12,7 @@ namespace SistemasConsultas.DAL
     {
         public DataTable ListarProductosInventarioDal()
         {
-            string consulta = "SELECT SUM(UNIDAD) AS Total_Productos_En_Stock\r\nFROM PRODUCTO;";
+            string consulta = "SELECT SUM(UNIDAD) AS TOTAL_PRODUCTOS_STOCK\r\nFROM PRODUCTO;";
             return conexion.EjecutarDataTabla(consulta, "fsdf");
         }
     }

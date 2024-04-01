@@ -12,7 +12,7 @@ namespace SistemasConsultas.DAL
     {
         public DataTable TotalIngresosDAL()
         {
-            string consulta = "SELECT p.NOMBRE, SUM(i.TOTAL) AS Total_Ingresos\r\nFROM PROVEEDOR p\r\nJOIN INGRESO i ON p.IDPROVEEDOR = i.IDPROVEEDOR\r\nGROUP BY p.NOMBRE;";
+            string consulta = "SELECT p.NOMBRE, SUM(i.TOTAL) AS TOTAL_INGRESOS\r\nFROM PROVEEDOR p\r\nJOIN INGRESO i ON p.IDPROVEEDOR = i.IDPROVEEDOR\r\nGROUP BY p.NOMBRE;";
             return conexion.EjecutarDataTabla(consulta, "fsdf");
         }
     }

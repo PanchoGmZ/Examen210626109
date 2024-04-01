@@ -58,5 +58,17 @@ namespace SistemasConsultas.VISTAS.MenuConsultasVISTAS
             TotalIngresoClientesVISTAS abrir = new TotalIngresoClientesVISTAS();
             abrir.Show();
         }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            ProveedorMasSuministroVISTAS abrir = new ProveedorMasSuministroVISTAS();
+            abrir.Show();
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            ProdTipoProdVISTAS abrir = new ProdTipoProdVISTAS();
+            abrir.Show();
+        }
     }
 }

@@ -12,7 +12,7 @@ namespace SistemasConsultas.DAL
     {
         public DataTable ListarVentasPorVendedorDal()
         {
-            string consulta = "SELECT U.NOMBREUSER AS VENDEDOR, COUNT(DV.IDPRODUCTO) AS CANTIDAD_PRODUCTOS_VENDIDOS\r\nFROM USUARIO U\r\nJOIN VENTA V ON U.IDUSUARIO = V.IDVENDEDOR\r\nJOIN DETALLEVENTA DV ON V.IDVENTA = DV.IDVENTA\r\nGROUP BY U.NOMBREUSER;";
+            string consulta = "SELECT u.NOMBREUSER AS VENDEDOR, p.NOMBRE AS PRODUCTO, SUM(d.CANTIDAD) AS CANTIDAD\r\nFROM USUARIO u\r\nJOIN VENTA v ON u.IDUSUARIO = v.IDVENDEDOR\r\nJOIN DETALLEVENTA d ON v.IDVENTA = d.IDVENTA\r\nJOIN PRODUCTO p ON d.IDPRODUCTO = p.IDPRODUCTO\r\nGROUP BY u.NOMBREUSER, p.NOMBRE;";
             return conexion.EjecutarDataTabla(consulta, "fsdf");
         }
     }
