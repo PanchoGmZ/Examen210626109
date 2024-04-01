@@ -76,8 +76,9 @@
             button4.Name = "button4";
             button4.Size = new Size(124, 42);
             button4.TabIndex = 3;
-            button4.Text = "button4";
+            button4.Text = "Cantidad Total de Productos en Stock";
             button4.UseVisualStyleBackColor = true;
+            button4.Click += button4_Click;
             // 
             // button5
             // 
@@ -85,8 +86,9 @@
             button5.Name = "button5";
             button5.Size = new Size(124, 42);
             button5.TabIndex = 4;
-            button5.Text = "button5";
+            button5.Text = "Productos Prontos a Expirar";
             button5.UseVisualStyleBackColor = true;
+            button5.Click += button5_Click;
             // 
             // button6
             // 
@@ -94,8 +96,9 @@
             button6.Name = "button6";
             button6.Size = new Size(124, 42);
             button6.TabIndex = 5;
-            button6.Text = "button6";
+            button6.Text = "Ventas de Productos por Vendedor";
             button6.UseVisualStyleBackColor = true;
+            button6.Click += button6_Click;
             // 
             // button7
             // 
@@ -103,8 +106,9 @@
             button7.Name = "button7";
             button7.Size = new Size(124, 42);
             button7.TabIndex = 6;
-            button7.Text = "button7";
+            button7.Text = "Total de Ingresos por Clientes";
             button7.UseVisualStyleBackColor = true;
+            button7.Click += button7_Click;
             // 
             // button8
             // 
@@ -137,7 +141,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(461, 389);
             Controls.Add(button10);
             Controls.Add(button9);
             Controls.Add(button8);

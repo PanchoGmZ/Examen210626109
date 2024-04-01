@@ -34,5 +34,29 @@ namespace SistemasConsultas.VISTAS.MenuConsultasVISTAS
             MarcaMasVendidaVISTAS abrir = new MarcaMasVendidaVISTAS();
             abrir.Show();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            CantidadTotalProductosVISTAS abrir = new CantidadTotalProductosVISTAS();
+            abrir.Show();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            ProductosPorExpirarpVISTAS abrir = new ProductosPorExpirarpVISTAS();
+            abrir.Show();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            VentaPorVendedorVISTAS abrir = new VentaPorVendedorVISTAS();
+            abrir.Show();
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            TotalIngresoClientesVISTAS abrir = new TotalIngresoClientesVISTAS();
+            abrir.Show();
+        }
     }
 }
